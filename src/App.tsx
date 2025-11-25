@@ -15,29 +15,18 @@ function App() {
     <div>
       {/* Component Switcher - only show if there are multiple components */}
       {componentNames.length > 1 && (
-        <div style={{
-          position: 'fixed',
-          top: '10px',
-          left: '10px',
-          zIndex: 1000,
-          background: 'white',
-          padding: '10px',
-          borderRadius: '8px',
-          boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-        }}>
-          <label htmlFor="component-select" style={{ marginRight: '8px', fontWeight: 'bold' }}>
-            Component:
-          </label>
+        <div className="fixed top-4 left-4 z-[1000] bg-white/95 dark:bg-gray-800/95 backdrop-blur border border-gray-200 dark:border-gray-700 shadow-lg rounded-xl px-4 py-3 flex flex-col gap-2 w-60">
+          <div className="flex items-center justify-between">
+            <label htmlFor="component-select" className="text-sm font-semibold text-gray-700 dark:text-gray-200">
+              Components
+            </label>
+            <span className="text-[11px] font-medium text-gray-500 dark:text-gray-400">{componentNames.length}</span>
+          </div>
           <select
             id="component-select"
             value={activeComponent}
             onChange={(e) => setActiveComponent(e.target.value)}
-            style={{
-              padding: '5px 10px',
-              borderRadius: '4px',
-              border: '1px solid #ccc',
-              cursor: 'pointer'
-            }}
+            className="text-sm bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 cursor-pointer text-gray-800 dark:text-gray-100"
           >
             {componentNames.map(name => (
               <option key={name} value={name}>{name}</option>
