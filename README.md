@@ -174,7 +174,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 If you found this project helpful, please give it a ⭐!
 
 For questions or issues, please [open an issue](https://github.com/mattanmr/react_component_preview_public/issues).
-
----
-
-**Happy Coding!** 🎉
