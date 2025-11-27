@@ -24,7 +24,7 @@ Perfect for developing, testing, and showcasing multiple React components in iso
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/react-component-preview.git
+git clone https://github.com/mattanmr/react_component_preview_public
 cd react-component-preview
 
 # Install dependencies
